@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formu.css">
+</head>
+
+<body>
+    
+    <nav>
+        <a href="index.html"> <button id="voltar">VOLTAR</button> </a>
+    </nav>
+
+    <div class="form-wrapper">
+        <form class="form">
+
+            <!-- Nome obrigatório -->
+            <div class="input-group">
+                <label for="nome" class="label">Nome (obrigatório)</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <!-- Série ou filme preferido -->
+            <div class="input-group">
+                <label for="filme" class="label">Série ou Filme Preferido</label>
+                <input type="text" id="filme" placeholder="Digite o nome da série ou filme">
+            </div>
+
+            <!-- Nota de 0 a 10 -->
+            <div class="input-group">
+                <label for="nota" class="label">Nota (0 a 10)</label>
+                <input type="number" id="nota" min="0" max="10" placeholder="0 a 10">
+            </div>
+
+            <!-- Data e hora que assistiu -->
+            <div class="input-group">
+                <label for="datahora" class="label">Data e Hora que Assistiu</label>
+                <input type="datetime-local" id="datahora">
+            </div>
+
+
+            <button type="submit" class="submit">Enviar Avaliação</button>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
