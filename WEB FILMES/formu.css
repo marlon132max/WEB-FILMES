@@ -1,0 +1,154 @@
+
+body {
+  background-color: #000;
+  color: #940606;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* Corpo do formulário */
+.form-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #111; /* fundo dark */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(148, 6, 6, 0.6);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Cada grupo de input */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #940606;
+}
+
+/* Inputs e campos de texto */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="datetime-local"],
+input[type="range"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #940606;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="datetime-local"]:focus {
+    border-color: #c50a0a;
+    box-shadow: 0 0 8px #c50a0a;
+}
+
+/* Slider (range) personalizado */
+input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: #940606;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #c50a0a;
+    cursor: pointer;
+    box-shadow: 0 0 6px #c50a0a;
+    transition: 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Botão de envio */
+.submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #940606;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background-color: #c50a0a;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #c50a0a;
+}
+
+/* Links do formulário */
+.form-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.form-footer a {
+    color: #940606;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.form-footer a:hover {
+    color: #c50a0a;
+    text-decoration: underline;
+}
+
+nav {
+  position: absolute;
+  /* posicionamento em relação à página */
+  top: 20px;
+  /* distância do topo */
+  left: 20px;
+  /* distância da esquerda */
+}
+
+
+#voltar {
+  background-color: #940606;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#voltar:hover {
+  background-color: #c50a0a;
+  transform: scale(1.05);
+}

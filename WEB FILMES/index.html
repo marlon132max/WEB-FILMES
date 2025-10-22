@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title> FILMES</title>
+
+</head>
+
+<body>
+
+ 
+    <div>
+        <header>
+            <button> <a href="cadastro.html">Cadastre-se</a> </button>
+            <button> <a href="Login.html">Login</a> </button>
+        </header>
+    </div>
+
+    <center>
+        <H1> TOP 10 FILMES DE TERROR 2025 </H1>
+    </center>
+
+    <audio id="bgMusic" src="mp3/fundo.mp3" autoplay loop muted></audio>
+
+    <section class="container">
+
+
+        <div class="card">
+            <h2> A MORTE ESTA NA FAMILIA </h2>
+            <img class="imagem" src="IMG\Amorte.jpg" alt="A morte esta na Familia">
+        </div>
+
+
+
+        <div class="card">
+            <h2> OBJETOS OBSCUROS</h2>
+            <img class="imagem" src="IMG\filme1.webp" alt="Obejtos Obscuros">
+
+        </div>
+
+
+
+
+        <div class="card">
+            <h2>INVOCAÇAO DO MAL </h2>
+            <img class="imagem" src="IMG\invocar.jpg" alt=" Invocaçao do mal ">
+
+        </div>
+
+
+
+        <div class="card">
+            <h2>SORRIA</h2>
+            <img class="imagem" src="IMG\sorria-2.webp" alt=" Sorria ">
+
+        </div>
+
+
+        <div class="card">
+            <h2> FAÇA ELA VOLTAR </h2>
+            <img class="imagem" src="IMG/voltar.jpg" alt=" Faça ela voltar ">
+
+        </div>
+
+
+
+        <div class="card">
+            <h2>ANABELLE</h2>
+            <img class="imagem" src="IMG/anabelle.jpg" alt="Anabelle">
+
+        </div>
+
+        <div class="card">
+            <h2>O EXORCISTA</h2>
+            <img class="imagem" src="IMG/o exorcista .jpg" alt="O Exorcista">
+
+        </div>
+
+        <div class="card">
+            <h2>HEREDITARIO</h2>
+            <img class="imagem" src="IMG/hereditario.jpg" alt="Hereditário">
+
+        </div>
+
+        <div class="card">
+            <h2>A FREIRA</h2>
+            <img class="imagem" src="IMG/freira.jpg" alt="A Freira">
+
+        </div>
+
+        <div class="card">
+            <h2>A ENTIDADE</h2>
+            <img class="imagem" src="IMG/entidade.webp" alt="A Entidade">
+
+        </div>
+
+
+        <div class="card">
+            <h2> A SUBSTANCIA</h2>
+            <img class="imagem" src="IMG/substancia.webp" alt="substancia">
+
+        </div>
+
+        <div class="card">
+            <h2>1992</h2>
+            <img class="imagem" src="IMG/1992.webp" alt="1992">
+
+        </div>
+
+
+    </section>
+
+
+
+    <footer>
+        <div class="footer-links">
+            <a href="formu.html">Formulario</a>
+            <a href="tabela.html">Sobre</a>
+        </div>
+    </footer> <br>
+
+    <center>
+        <div class="footer-contact">
+            <a href="https://github.com/seuusuario" target="_blank" title="GitHub">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="marlon14jk@gmail.com" title="E-mail">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+    </center>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const audio = document.getElementById('bgMusic');
+            setTimeout(() => {
+                audio.muted = false; // desativa o mute
+                audio.play().catch(() => {
+                    // Caso o autoplay seja bloqueado, tocar no clique do usuário
+                    document.body.addEventListener('click', () => audio.play(), { once: true });
+                });
+            }, 1000);
+        });
+    </script>
+
+    <script src="script.mjs"></script>
+
+</body>
+
+</html>
